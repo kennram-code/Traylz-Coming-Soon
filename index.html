@@ -4,20 +4,60 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="style.css">
         <title>TRAYLZ</title>
     </head>
     <body>
        <section class="showcase">
-           <div class="video-container">
-               <video src="images/city.mov" autoplay muted loop></video>
-           </div>
-            <div class="content">
-            <img src="images/TRAYLZ.png" alt="">
-        </div>
+
+           <header>
+               <h2 class="logo">TRAYLZ</h2>
+               <div class="toggle"></div>
+           </header>
+           
+           <video src="images/city.mov" autoplay muted loop></video>
+
+           <div class="overlay"></div>
+
+           
+            <!-- <div class="content"> -->
+            <!-- <img class="desktop" src="images/TRAYLZ.png" alt="logo"> -->
+  
         <div class="text">
-            <H3>Coming soon!</H3>
+            <h2>Never Stop</h2>
+            <h3>Exploring The World</h3>
+            <p>TRAYLZ is an Augmented Reality application that allows you to explore the hidden stories of places across entertainment, sport and cultural heritage, tailored to your interests anytime, anywhere.</p>
+            <a href="#">Explore</a>
         </div>
+
+        <ul class="social">
+            <li><a href="https://www.facebook.com/TRAYLZapp/"><img src="images/facebook.png" alt=""></a></li>
+            <li><a href="https://twitter.com/TRAYLZ_APP"><img src="images/twitter.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/traylz_app/?hl=en"><img src="images/instagram.png" alt=""></a></li>
+        </ul>
     </section>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+    <script>
+        const menuToggle = document.querySelector('.toggle')
+        const showcase = document.querySelector('.showcase')
+
+        menuToggle.addEventListener('click', () => {
+            menuToggle.classList.toggle('active')
+            showcase.classList.toggle('active')
+        })
+
+    </script>
+
+
     </body>
 </html>
