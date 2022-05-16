@@ -195,26 +195,6 @@
 
 
 
-/* PRIVACY PAGE */
-
-.privacy h3 {
-  display: inline-block;
-  font-size: 2em;
-  margin-top: 50px;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  
-}
-
-.privacy p {
-  font-size: 1.1em;
-  margin: 20px 0;
-  font-weight: 400;
-  max-width: 700px;
-}
-
-
-
 
 /* RESPONSIVE */
 
