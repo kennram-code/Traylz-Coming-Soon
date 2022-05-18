@@ -42,11 +42,14 @@
   justify-content: space-between;
 }
 
-.logo {
+.logo a {
   text-transform: uppercase;
+  text-decoration: none;
   cursor: pointer;
-  font-size: 2em;
+  font-size: 1.5em;
+  color:#00a3bd;
 }
+
 
 .toggle {
   position: relative;
@@ -131,21 +134,16 @@
   letter-spacing: 6px;
 }
 
+
+/* SOCIAL ICONS */
+
 .social {
   position: absolute;
   bottom: 40px;
-  z-index: 10;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-.copyright {
-  position: absolute;
-  bottom: 10px;
-  font-size: 0.5em;
-}
-
 
 .social li {
   list-style: none;
@@ -162,6 +160,36 @@
 .social li a:hover {
   transform: scale(0.5) translateY(-15px);
 }
+
+
+/* POLICIES */
+
+
+.policies {
+  position: absolute;
+  display: flex;
+  bottom: 50px;
+  right: 0;
+  padding: 10px 30px;
+  cursor: pointer;
+  padding: 0 100px;
+
+}
+
+.policies li a {
+  display: inline-block;
+  filter: invert(1);
+  transform: scale(0.7);
+  text-decoration: none;
+  font-size: 16px;
+  color: #111;
+}
+
+.policies li {
+  list-style: none;
+}
+
+
 
 .menu {
   position: absolute;
@@ -215,6 +243,80 @@
 
 
 
+/* COOKIES NOTICE */
+
+p.indent {
+  margin-left: 30px;
+}
+
+.cookies h3 {
+  display: inline-block;
+  font-size: 2em;
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
+}
+
+.cookies p {
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+
+
+/* COOKIES BANNER */
+#cookie-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgb(0, 164, 189);
+  color: #f5f6fa;
+  padding: 0 100px;
+  box-shadow: 0 -2px 16px rgba(0, 164, 189, 0.707);
+
+}
+
+.hidden {
+  opacity: 0;
+
+}
+
+#cookie-container a {
+  color: #f5f6fa;
+}
+
+#cookie-container p {
+  margin-top: 8px;
+  margin-bottom: 8px;
+  
+}
+
+#cookie-btn {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  border-radius: 30px;
+  padding: 4px 12px;
+  text-decoration: none;
+  color: #111;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+#cookie-btn a:hover {
+  letter-spacing: 6px;
+}
+
+
+
 
 /* RESPONSIVE */
 
@@ -232,3 +334,5 @@
     font-size: 2em;
   }
 }
+
+
