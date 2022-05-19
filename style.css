@@ -2,7 +2,9 @@
 
 :root {
   --overlay-color: #00a3bd;
+  
 }
+
 
 * {
   box-sizing: border-box;
@@ -89,6 +91,9 @@
   mix-blend-mode: overlay;
 }
 
+
+/* HOME PAGE */
+
 .text {
   position: relative;
   z-index: 10;
@@ -133,6 +138,59 @@
 .text a:hover {
   letter-spacing: 6px;
 }
+
+
+/* CAREERS PAGE */
+
+.careers-text {
+  position: relative;
+  
+}
+
+
+.careers-text h3 {
+  display: inline-block;
+  font-size: 4em;
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
+}
+
+.careers-text p {
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+.careers-text a {
+  display: inline-block;
+  font-size: 1em;
+  background: #fff;
+  border-radius: 30px;
+  padding: 10px 30px;
+  text-decoration: none;
+  color: #111;
+  margin-top: 19px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  transition: 0.2s;
+}
+
+.careers-text a:hover {
+  letter-spacing: 6px;
+}
+
+
+/* CAREERS LIST */
+
+
+
+.careers-text li {
+  margin-left: 40px;
+}
+
 
 
 /* SOCIAL ICONS */
@@ -337,5 +395,8 @@ p.indent {
   .text h3 {
     font-size: 2em;
   }
+
+  
+
 }
 
