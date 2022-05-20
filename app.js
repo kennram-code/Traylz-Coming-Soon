@@ -1,9 +1,9 @@
-const localStorage = {
+const cookieStorage = {
     getItem: (item) => {
         const cookies = document.cookie
             .split(';')
             .map(cookie => cookie.split('='))
-            .reduce((acc, [key, value]) => ({ ...acc, [key.trim]: value}), {})
+            .reduce((acc, [key, value]) => ({ ...acc, [key.trim()]: value}), {})
         return cookies[item]
     },
     setItem: (item, value) => {
@@ -11,32 +11,28 @@ const localStorage = {
     }
 }
 
-const storageType = localStorage;
-const consentPropertyName = 'Traylz_consent';
-const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
-const saveToStorage = () => storageType.setItem(consentPropertyName, true);
+const storageType = cookieStorage;
+const consentPropertyName = 'traylz_consent';
+const shouldShowPopup = () => !storageType.getItem(consentPropertyName)
+const saveToStorage = () => storageType.setItem(consentPropertyName, true)
 
 window.onload = () => {
-
     const acceptFn = event => {
-        saveToStorage(storageType);
-        cookieContainer.classList.add('hidden')
+    saveToStorage(storageType)
+    consentPopup.classList.add('hidden')
     }
 
-    const cookieContainer =  document.getElementById('cookie-container')
-    const cookieButton = document.getElementById('cookie-btn')
-
+    const consentPopup = document.getElementById('consent-popup')
+    const consent = document.getElementById('consent')
+    consent.addEventListener('click', acceptFn)
     
-
-    cookieButton.addEventListener('click', acceptFn)
-
     if (shouldShowPopup(storageType)) {
         setTimeout(() => {
-            cookieContainer.classList.remove('hidden')
+            consentPopup.classList.remove('hidden')
         }, 2000)
         
-        }
     }
+}
 
 
 const menuToggle = document.querySelector('.toggle')

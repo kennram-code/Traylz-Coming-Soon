@@ -359,34 +359,34 @@ p.indent {
 
 
 /* COOKIES BANNER */
-#cookie-container {
+#consent-popup {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
   background: rgb(0, 164, 189);
+  box-shadow: 0 -2px 16px rgba(0, 164, 189, 0.707);
   color: #f5f6fa;
   padding: 0 100px;
-  box-shadow: 0 -2px 16px rgba(0, 164, 189, 0.707);
-
+  transition: .8s ease;
 }
 
 .hidden {
   opacity: 0;
-
 }
 
-#cookie-container a {
+
+#consent-popup a {
   color: #f5f6fa;
 }
 
-#cookie-container p {
+#consent-popup p {
   margin-top: 8px;
   margin-bottom: 8px;
   
 }
 
-#cookie-btn {
+#consent {
   display: inline-block;
   font-size: 1em;
   background: #fff;
@@ -402,7 +402,7 @@ p.indent {
   cursor: pointer;
 }
 
-#cookie-btn a:hover {
+#consent a:hover {
   letter-spacing: 6px;
 }
 
