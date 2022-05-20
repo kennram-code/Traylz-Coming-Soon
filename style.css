@@ -140,21 +140,26 @@
 }
 
 
-/* CAREERS PAGE */
+/* CAREERS-TEXT */
 
 .careers-text {
   position: relative;
   
 }
 
+.careers-text h2 {
+  font-size: 5em;
+  font-weight: 800;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+
 
 .careers-text h3 {
-  display: inline-block;
   font-size: 4em;
-  margin-top: 50px;
+  font-weight: 700;
+  line-height: 1em;
   text-transform: uppercase;
-  letter-spacing: 2px;
-  
 }
 
 .careers-text p {
@@ -163,6 +168,8 @@
   font-weight: 400;
   max-width: 700px;
 }
+
+
 
 .careers-text a {
   display: inline-block;
@@ -182,14 +189,47 @@
   letter-spacing: 6px;
 }
 
-
-/* CAREERS LIST */
-
-
-
 .careers-text li {
   margin-left: 40px;
 }
+
+
+/* CAREERS PAGE */
+
+.careers-page {
+  position: relative;
+  
+}
+
+.careers-page h3 {
+  display: inline-block;
+  font-size: 2em;
+  margin-top: 50px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  
+}
+
+.careers-page p {
+  font-size: 1.1em;
+  margin: 20px 0;
+  font-weight: 400;
+  max-width: 700px;
+}
+
+.careers-page li {
+  font-size: 1.1em;
+  font-weight: 400;
+  max-width: 700px;
+  margin: 3em;
+  margin: 10px 0;
+}
+
+
+
+
+
+
 
 
 
@@ -225,7 +265,6 @@
 
 .policies {
   position: absolute;
-  display: flex;
   bottom: 40px;
   right: 0;
   padding: 10px 100px;
@@ -234,21 +273,12 @@
 
 }
 
-.policies li a {
-  display: inline-block;
-  filter: invert(1);
-  transform: scale(0.7);
-  text-decoration: none;
-  font-size: 16px;
-  color: #111;
-}
-
 .policies li {
   list-style: none;
 }
 
 .policies li p {
-  font-size: 16px;
+  font-size: 10px;
 }
 
 
@@ -395,6 +425,8 @@ p.indent {
   .text h3 {
     font-size: 2em;
   }
+
+ 
 
   
 
