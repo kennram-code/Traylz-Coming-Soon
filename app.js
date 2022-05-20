@@ -1,4 +1,4 @@
-const cookieStorage = {
+const localStorage = {
     getItem: (item) => {
         const cookies = document.cookie
             .split(';')
@@ -11,7 +11,7 @@ const cookieStorage = {
     }
 }
 
-const storageType = cookieStorage;
+const storageType = localStorage;
 const consentPropertyName = 'Traylz_consent';
 const shouldShowPopup = () => !storageType.getItem(consentPropertyName);
 const saveToStorage = () => storageType.setItem(consentPropertyName, true);
@@ -37,10 +37,6 @@ window.onload = () => {
         
         }
     }
-
-
-
-
 
 
 const menuToggle = document.querySelector('.toggle')
