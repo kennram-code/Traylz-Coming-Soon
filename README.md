@@ -1,4 +1,4 @@
-# Traylz-Coming-Soon
+# Traylz Website
 
 TRAYLZ website built with HTML, CSS & JavaScript. 
 
